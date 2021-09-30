@@ -1,0 +1,6 @@
+Function negrita(ByVal Rng As Range) As Boolean
+'Solo para una celda
+If Rng.Count <> 1 Then negrita = CVErr(xlErrNum)
+'Detecta si la celda esta en negrita
+If Rng.Font.Bold Then negrita = True
+End Function
